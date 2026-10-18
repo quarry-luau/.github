@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="120" height="120" src="https://raw.githubusercontent.com/quarry-luau/.github/main/assets/logo.png" alt="Quarry logo">
+</p>
+
 <h1 align="center">Quarry for Luau</h1>
 
 <p align="center">
