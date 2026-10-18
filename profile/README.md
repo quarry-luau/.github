@@ -18,19 +18,25 @@ already know from the web works the same in a Roblox game. Every tool is a `quar
 |---|---|---|
 | [**quarry-query**](https://github.com/quarry-luau/quarry-query) | `quarry-luau/quarry-query` | [TanStack Query](https://tanstack.com/query) for Luau: server data cached by key, deduplicated, retried and kept fresh, with optimistic updates |
 | [**quarry-react-query**](https://github.com/quarry-luau/quarry-query/tree/main/lib/quarry-react-query) | `quarry-luau/quarry-react-query` | Its hooks for [React-Lua](https://github.com/jsdotlua/react-lua): `useQuery`, `useQuerySelect`, `useMutation` |
-| **quarry-tailwind** (coming) | `quarry-luau/quarry-tailwind` | [Tailwind CSS](https://tailwindcss.com) classes compiled to Roblox's style engine, for React-Lua |
+| [**quarry-tailwind**](https://github.com/quarry-luau/quarry-tailwind) | `quarry-luau/quarry-tailwind` | [Tailwind CSS](https://tailwindcss.com) for React-Lua: class names compiled into Roblox's style engine, with states, transitions and Tailwind 4's theme |
 
 ```toml
 [dependencies]
 Query = "quarry-luau/quarry-query@0.1.0"
 ReactQuery = "quarry-luau/quarry-react-query@0.1.0"
+Tailwind = "quarry-luau/quarry-tailwind@0.1.0"
 ```
+
+> The `quarry-luau` scope is waiting for Wally to approve it
+> ([wally-index#131](https://github.com/UpliftGames/wally-index/pull/131)). Until then, each
+> release has its packages as `.rbxm` models.
 
 ### Start here
 
-- [Quarry Query's README and API](https://github.com/quarry-luau/quarry-query#readme)
-- [Releases](https://github.com/quarry-luau/quarry-query/releases), also as `.rbxm` models for places
-  without Wally
+- [Quarry Query](https://github.com/quarry-luau/quarry-query#readme): server data, cached and kept
+  fresh, as TanStack Query does it
+- [quarry-tailwind](https://github.com/quarry-luau/quarry-tailwind#readme): what compiles, the API,
+  and where Roblox differs from the web
 - [How to contribute](https://github.com/quarry-luau/.github/blob/main/CONTRIBUTING.md)
 
 Issues and pull requests are welcome.
