@@ -2,35 +2,35 @@
   <img width="120" height="120" src="https://raw.githubusercontent.com/quarry-luau/.github/main/assets/logo.png" alt="Quarry logo">
 </p>
 
-<h1 align="center">Quarry for Luau</h1>
+<h1 align="center">Quarry</h1>
 
 <p align="center">
-  Server data for Roblox, the way the web does it: a port of
-  <a href="https://tanstack.com/query">TanStack Query</a> to Luau.
+  Open-source tools for Roblox: the web's best libraries, ported to Luau.
 </p>
 
-Quarry caches what your game asks the server for, by key; shares one request between everything
-that asks for the same thing; retries failures; refetches what you invalidate; and lets you update
-the cache optimistically and roll it back. It is ported from TanStack's own source, so if you have
-used TanStack Query on the web, you already know it.
+Quarry ports the libraries web developers rely on to Luau, from their own source, so what you
+already know from the web works the same in a Roblox game. Every tool is a `quarry-*` package on
+[Wally](https://wally.run), MIT licensed, typed in strict mode and tested.
 
-### Packages
+### Tools
 
-| Package | Wally | What it is |
+| Tool | Wally | What it is |
 |---|---|---|
-| [**quarry**](https://github.com/quarry-luau/quarry/tree/main/lib/quarry) | `quarry-luau/quarry` | The core: `QueryClient`, its cache and observers. Plain Luau, no dependencies |
-| [**react-quarry**](https://github.com/quarry-luau/quarry/tree/main/lib/react-quarry) | `quarry-luau/react-quarry` | Hooks for [React-Lua](https://github.com/jsdotlua/react-lua): `useQuery`, `useQuerySelect`, `useMutation` |
+| [**quarry-query**](https://github.com/quarry-luau/quarry-query) | `quarry-luau/quarry-query` | [TanStack Query](https://tanstack.com/query) for Luau: server data cached by key, deduplicated, retried and kept fresh, with optimistic updates |
+| [**quarry-react-query**](https://github.com/quarry-luau/quarry-query/tree/main/lib/quarry-react-query) | `quarry-luau/quarry-react-query` | Its hooks for [React-Lua](https://github.com/jsdotlua/react-lua): `useQuery`, `useQuerySelect`, `useMutation` |
+| **quarry-tailwind** (coming) | `quarry-luau/quarry-tailwind` | [Tailwind CSS](https://tailwindcss.com) classes compiled to Roblox's style engine, for React-Lua |
 
 ```toml
 [dependencies]
-Quarry = "quarry-luau/quarry@0.1.0"
-ReactQuarry = "quarry-luau/react-quarry@0.1.0"
+Query = "quarry-luau/quarry-query@0.1.0"
+ReactQuery = "quarry-luau/quarry-react-query@0.1.0"
 ```
 
 ### Start here
 
-- [README and API](https://github.com/quarry-luau/quarry#readme)
-- [Differences from TanStack Query](https://github.com/quarry-luau/quarry#differences-from-tanstack-query)
-- [Releases](https://github.com/quarry-luau/quarry/releases) (also as `.rbxm` models, for places without Wally)
+- [Quarry Query's README and API](https://github.com/quarry-luau/quarry-query#readme)
+- [Releases](https://github.com/quarry-luau/quarry-query/releases), also as `.rbxm` models for places
+  without Wally
+- [How to contribute](https://github.com/quarry-luau/.github/blob/main/CONTRIBUTING.md)
 
-Quarry is MIT licensed, as TanStack Query is. Issues and pull requests are welcome.
+Issues and pull requests are welcome.

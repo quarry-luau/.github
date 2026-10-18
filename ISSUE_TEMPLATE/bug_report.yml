@@ -1,5 +1,5 @@
 name: Bug report
-description: Quarry does something wrong
+description: A Quarry tool does something wrong
 labels: ["bug"]
 body:
   - type: markdown
@@ -9,8 +9,8 @@ body:
     id: version
     attributes:
       label: Version
-      description: The quarry and react-quarry versions from your wally.lock
-      placeholder: quarry 0.1.0, react-quarry 0.1.0
+      description: The versions of the Quarry packages you use from your wally.lock
+      placeholder: quarry-query 0.1.0, quarry-react-query 0.1.0
     validations:
       required: true
   - type: textarea
@@ -37,5 +37,5 @@ body:
   - type: textarea
     id: tanstack
     attributes:
-      label: What TanStack Query does
-      description: If you know, how TanStack Query behaves in the same case
+      label: What the original does
+      description: If you know, how the library it ports (TanStack Query, Tailwind) behaves in the same case

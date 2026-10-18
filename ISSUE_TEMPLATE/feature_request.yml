@@ -1,5 +1,5 @@
 name: Feature request
-description: Something Quarry could do
+description: Something a Quarry tool could do
 labels: ["enhancement"]
 body:
   - type: textarea
