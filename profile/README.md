@@ -5,12 +5,13 @@
 <h1 align="center">Quarry</h1>
 
 <p align="center">
-  Open-source tools for Roblox: the web's best libraries, ported to Luau.
+  Open-source tools for Roblox: the web's best libraries, in Luau.
 </p>
 
-Quarry ports the libraries web developers rely on to Luau, from their own source, so what you
-already know from the web works the same in a Roblox game. Every tool is a `quarry-*` package on
-[Wally](https://wally.run), MIT licensed, typed in strict mode and tested.
+Quarry brings the libraries web developers rely on to Roblox, so what you already know from the web
+works the same in a game: Quarry Query is TanStack Query ported from its own source, and
+quarry-tailwind compiles Tailwind CSS's classes into Roblox's style engine. Every tool is a
+`quarry-*` package for [Wally](https://wally.run), MIT licensed, typed in strict mode and tested.
 
 ### Tools
 

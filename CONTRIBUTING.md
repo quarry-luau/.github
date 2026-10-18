@@ -1,9 +1,11 @@
 # Contributing to Quarry
 
-Thanks for helping. Quarry's tools are ports of libraries from the web (Quarry Query of
-[TanStack Query](https://github.com/TanStack/query)), so the first question for any change is what
-the original does: a fix that makes a tool behave as the original does is welcome; a change in
-behaviour the original does not have needs a reason a game has and a web app does not.
+Thanks for helping. Each of Quarry's tools follows a library from the web (Quarry Query ports
+[TanStack Query](https://github.com/TanStack/query); quarry-tailwind compiles
+[Tailwind CSS](https://github.com/tailwindlabs/tailwindcss)'s classes), so the first question for
+any change is what the original does: a fix that makes a tool behave as the original does is
+welcome; a change in behaviour the original does not have needs a reason a game has and a web app
+does not.
 
 ## Before you start
 

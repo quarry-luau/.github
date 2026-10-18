@@ -7,8 +7,9 @@ fix.
 
 ## Reporting a vulnerability
 
-Please do not open a public issue. Report it privately through GitHub:
-[Report a vulnerability](https://github.com/quarry-luau/quarry-query/security/advisories/new).
+Please do not open a public issue. Report it privately through GitHub, on the tool's repository:
+[quarry-query](https://github.com/quarry-luau/quarry-query/security/advisories/new) or
+[quarry-tailwind](https://github.com/quarry-luau/quarry-tailwind/security/advisories/new).
 
 Say what is affected and how to reproduce it. You will get an answer within a week, and a fix or a
 plan once the report is confirmed. You will be credited in the advisory unless you ask not to be.
