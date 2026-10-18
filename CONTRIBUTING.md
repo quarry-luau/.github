@@ -19,7 +19,7 @@ You need [Rokit](https://github.com/rojo-rbx/rokit).
 ```sh
 rokit install
 lune run install   # React for type checking the bindings, sourcemap, package types
-lune run check     # what CI runs: license copies, format, lint, types, tests, builds
+lune run check     # what CI runs: license, format, style, lint, types, tests, builds
 ```
 
 - The core is `lib/quarry`, the React bindings `lib/react-quarry`.
@@ -29,7 +29,9 @@ lune run check     # what CI runs: license copies, format, lint, types, tests, b
   module's header comment.
 - Every change in behaviour comes with a test in `lib/quarry/test` (Lune, with the fake scheduler:
   no waiting on real time). Check that the test fails without your change.
-- StyLua formats the code: `stylua lib .lune`.
+- The code follows the Linux kernel coding style, read for Luau: see
+  [STYLE.md](https://github.com/quarry-luau/quarry/blob/main/STYLE.md). StyLua lays it out
+  (`stylua lib .lune`) and `lune run style` checks the rest.
 
 ## Pull requests
 
