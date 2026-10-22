@@ -28,9 +28,8 @@ ReactQuery = "quarry-luau/quarry-react-query@0.1.0"
 Tailwind = "quarry-luau/quarry-tailwind@0.1.0"
 ```
 
-> The `quarry-luau` scope is waiting for Wally to approve it
-> ([wally-index#131](https://github.com/UpliftGames/wally-index/pull/131)). Until then, each
-> release has its packages as `.rbxm` models.
+Then `wally install`. Each release also has its packages as `.rbxm` models, for a place without
+Wally.
 
 ### Start here
 
